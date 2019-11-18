@@ -9,7 +9,7 @@ env:
   # The password for this user account
   TL_PASS: ${{ secrets.TL_PASS }}
   # The base URL for the console -- http://console.<my_company>.com:8083 -- without a trailing /
-  TL_CONSOLE_URL: <FILL IN HERE>
+  TL_CONSOLE_URL: ${{ secrets.TL_Console }}
   CONTAINER_IMAGE: corp/helloworld:${{ github.sha }}
 
 jobs:
